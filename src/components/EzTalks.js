@@ -3,15 +3,9 @@ import { Image, View, Text } from 'react-native';
 
 import logo from '../../assets/images/logo.jpg';
 
-export default class EzTalks extends React.Component {
-  render() {
-    const { title } = this.props;
-
-    return (
-      <View style={{ borderColor: 'red', borderWidth: 5 }}>
-        <Image source={logo} />
-        <Text>{title}</Text>
-      </View>
-    );
-  }
-}
+export default ({ title }) => (
+  <View style={{ borderColor: 'red', borderWidth: 5 }}>
+    <Image source={logo} />
+    <Text>{title}</Text>
+  </View>
+);
