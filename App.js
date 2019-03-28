@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
-import EzTalks from './src/components/EzTalks';
+import Watch from './src/components/Watch';
 
 export default class App extends Component<Props> {
   render() {
@@ -9,7 +9,7 @@ export default class App extends Component<Props> {
       <View style={styles.container}>
         <Text style={styles.welcome}>Welcome to #eztalks 3!</Text>
         <Text style={styles.instructions}>To get started, let's do a component</Text>
-        <EzTalks title="#ezdevs" />
+        <Watch />
       </View>
     );
   }
